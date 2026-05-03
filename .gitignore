@@ -1,0 +1,44 @@
+# Build directories
+build/
+Debug/
+Release/
+bin/
+obj/
+
+# Object files
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.exe
+*.out
+
+# IDE files
+.vscode/
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters
+.idea/
+*.swp
+*.swo
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Dependencies
+*.dep
+.deps/
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.log
