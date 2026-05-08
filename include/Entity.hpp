@@ -8,12 +8,12 @@ class Entity
 {
 public:
 	Entity(Vec2 position, SDL_Texture *texture) : pos(position), texture(texture) {};
-	Entity(Vec2 position, SDL_Texture *texture, bool needsToBeCentered);
 	Entity(Vec2 position, SDL_Texture *texture, textureSize size) : pos(position), texture(texture), size(size) {};
-	Entity(Vec2 position, SDL_Texture *texture, textureSize size, bool needsToBeCentered);
-	Vec2 getPos() { return pos; };
-	SDL_Texture *getTexture() { return texture; };
-	textureSize getSize() { return size; };
+	// Entity(Vec2 position, SDL_Texture *texture, bool needsToBeCentered);
+	// Entity(Vec2 position, SDL_Texture *texture, textureSize size, bool needsToBeCentered);
+	Vec2 getPos() const { return pos; };
+	SDL_Texture *getTexture() const { return texture; };
+	textureSize getSize() const { return size; };
 	void setPos(float x, float y);
 	void update();
 

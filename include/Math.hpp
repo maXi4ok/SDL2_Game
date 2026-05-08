@@ -1,6 +1,13 @@
 #pragma once
 #include <iostream>
 
+class Entity;
+
+namespace Math
+{
+	bool checkCollision(Entity &a, Entity &b);
+}
+
 struct Vec2
 {
 	float x, y;
@@ -17,7 +24,7 @@ struct Vec2
 struct textureSize
 {
 	float h, w;
-	
+
 	textureSize() : h(32), w(32) {};
 	textureSize(int h, int w) : h(h), w(w) {};
 };
